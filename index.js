@@ -2,7 +2,7 @@
 // Rafael Bauer
 
 //*********************************************************************************
-//  Retorna o nome digitado pelo usuário e a cor favorita digitada pelo usuário,  *      
+//  Retorna o nome digitado pelo usuário e a cor favorita digitada pelo usuário,  *
 //  sem nenhum tipo de filtração ou correção.                                     *
 //*********************************************************************************
 
@@ -130,3 +130,83 @@ imprimirOlaMundo() */
 }
 
 receberNome("Rafael")  */
+
+//
+
+/* const a = 1
+
+function imprimeVariavel() {
+    const b = 2
+    console.log('Variável A', a)
+    console.log('Variável B', b)
+}
+
+imprimeVariavel()
+
+console.log('Variável A', a)
+console.log('Variável B', b) */
+
+//
+
+/* function calcularArea(altura, largura) {
+    const area = altura * largura;
+    return area;
+}
+
+const areaCalculada = calcularArea(2, 3);
+
+console.log(calcularArea(2, 3));
+console.log(areaCalculada);
+ */
+
+//
+
+/* function calcularSoma(numa, numb) {
+    return numa + numb;
+}
+
+console.log(calcularSoma(1, 2)); */
+
+//
+
+/* function receberArray(arrayDeNumeros = []) {
+    return [arrayDeNumeros.length, arrayDeNumeros[0]];
+}
+
+console.log(receberArray([1, 2, 3, 4, 5, 6]));
+ */
+
+/* function soma(a, b) {
+    return a + b;
+}
+
+console.log(soma(1, 2));*/
+
+//
+
+/* function somaDois(i, ii) {
+    console.log(i + ii);
+}
+
+console.log(somaDois(1, 2));*/
+
+//***********************
+//  Expressão de Array  *
+//***********************
+
+const receberArray = function (arrayDeNumeros = []) {
+    return [arrayDeNumeros.length, arrayDeNumeros[0]];
+};
+
+console.log(receberArray([1, 2, 3, 4, 5, 6, 7]));
+
+
+//*******************
+//  Array function  *
+//*******************
+
+const receberArrayII = (arrayDeNumerosII = []) => {        
+    return [arrayDeNumerosII.length, arrayDeNumerosII[0]];
+};
+
+console.log(receberArrayII([1, 2, 3, 4, 5, 6, 7]));
