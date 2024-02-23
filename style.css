@@ -2,3 +2,30 @@ body {
     background-color: #777;
     color: aqua
 }
+
+/* style.css */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+img {
+    width: 50%;
+    /* ajuste a largura conforme necessário */
+    height: auto;
+    animation: rotate 10s linear infinite;
+    /* adicione uma animação de rotação */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(140000deg);
+    }
+}

@@ -194,19 +194,190 @@ console.log(somaDois(1, 2));*/
 //  Expressão de Array  *
 //***********************
 
-const receberArray = function (arrayDeNumeros = []) {
+/* const receberArray = function (arrayDeNumeros = []) {
     return [arrayDeNumeros.length, arrayDeNumeros[0]];
 };
 
-console.log(receberArray([1, 2, 3, 4, 5, 6, 7]));
+console.log(receberArray([1, 2, 3, 4, 5, 6, 7])); */
 
 
 //*******************
 //  Array function  *
 //*******************
 
-const receberArrayII = (arrayDeNumerosII = []) => {        
+/* const receberArrayII = (arrayDeNumerosII = []) => {
     return [arrayDeNumerosII.length, arrayDeNumerosII[0]];
 };
 
-console.log(receberArrayII([1, 2, 3, 4, 5, 6, 7]));
+console.log(receberArrayII([1, 2, 3, 4, 5, 6, 7])); */
+
+//
+
+/* const professor = {
+    nome: 'Bzn',
+    idade: 20,
+    tarefas: ['Dar aula', 'Responder dúvidas'],
+    contarPiada: function () {
+        console.log('É pavê ou pa comê?');
+    }
+}
+
+console.log(professor.idade) */
+
+/* const teacher = {
+    nome: prompt('Digite o seu nome:'),
+    idade: prompt('Digite sua idade:'),
+    email: prompt('Digite seu email:'),
+}
+
+console.log(teacher.nome);
+teacher.nome = 'Rafael Bauer';
+console.log(teacher.nome);
+console.log(teacher.idade);
+console.log(teacher.email); */
+
+//######################################
+//  OBJETO (IMPORTANTES ENSINAMENTOS)  #
+//######################################
+
+/* aProcuraDaFelicidade = {
+    nomeDoFilme: 'À procura da felicidade',
+    direcao: 'Gabriele Muccino',
+    roteiro: 'Steve Conrad',
+    elenco: ['Will Smith', 'Thandiwe Newton', 'Jaden Smith'],
+    lancamento: '2 de Fevereiro de 2007',
+    assistiu: true
+}
+
+aProcuraDaFelicidade.personagens = ['Chris Gardner', 'Christopher Jr.'] // Forma de adicionar algo ao objeto
+
+console.log(aProcuraDaFelicidade.personagens[0], 'e', aProcuraDaFelicidade.personagens[1])
+
+aProcuraDaFelicidade.personagens[0] = 'Xuxa' // Forma de modificar algo no objeto
+
+console.log(aProcuraDaFelicidade.personagens[0], 'e', aProcuraDaFelicidade.personagens[1]) */
+
+/* console.log(aProcuraDaFelicidade.nomeDoFilme);
+console.log(aProcuraDaFelicidade.direcao);
+console.log(aProcuraDaFelicidade.roteiro);
+console.log(aProcuraDaFelicidade.elenco[0], ',', aProcuraDaFelicidade.elenco[1], ',', aProcuraDaFelicidade.elenco[2]);
+console.log(aProcuraDaFelicidade['lancamento']);
+if (aProcuraDaFelicidade.assistiu === true) {
+    console.log('Assisti');
+}
+else {
+    console.log('Não assisti');
+} */
+
+//#####################################################
+//  Objeto simples e console log fraseando o objeto   #
+//#####################################################
+
+/* pessoa = {
+    nome: 'Rafael',
+    idade: 20,
+    generoMusical: 'Som da última trombeta'
+}
+
+console.log('O nome da pessoa é:', pessoa.nome, ', ela tem', pessoa.idade, 'anos e gosta muito de', pessoa.generoMusical); */
+
+// Um objeto dentro de outro objeto
+
+/* const donoDoPet = {
+    nome: 'Dono do Pet',
+    pet: {
+        nomeDoPet: "Cosmo",
+        raca: "Vira-Lata",
+        idade: 1
+    }
+}
+
+console.log(donoDoPet.pet.nomeDoPet) */
+
+//*******************************************
+//  Acessando um array dentro de um objeto  *
+//*******************************************
+
+/* const curso = {
+    nome: 'Noturn Frontend',
+    linguagens: ['JS', 'CSS', 'HTML']
+}
+
+console.log(curso.linguagens[0]) */
+
+//*********************
+//  Array de objetos  *
+//*********************
+
+/* const professores = [
+    { nome: 'Professor1', modulo: 1 },
+    { nome: 'Professor2', modulo: 2 },
+    { nome: 'Professor2', modulo: 3 }
+]
+
+console.log(professores[1].nome)
+
+professores.numeroEstudantes = 50
+
+console.log(professores)
+
+console.log(typeof (professores.numeroEstudantes)) */
+
+//###################################################
+//  Espalhamento ou Spread  / Utilizando um objeto  #
+//###################################################
+
+/* const usuario = {
+    nome: 'Prof',
+    idade: 25,
+    email: 'prof@senacrs.com.br',
+    cidade: 'São Paulo'
+} */
+
+/* console.log(usuario)
+
+const novoUsuario = {
+    ...usuario,
+    nome: 'João',
+    idade: 28
+}
+
+console.log(novoUsuario) */
+
+//#############################
+//  Spread utilizando arrays  #
+//#############################
+
+/* const listaDeNomes = ['Nome1', 'Nome2', 'Nome3']
+
+const copiaNomes = [...listaDeNomes]
+
+console.log(copiaNomes) */
+
+//################
+//  Exercício 4  #
+//################
+
+pessoa = {
+    nome: 'Rafael',
+    idade: 20,
+    generoMusical: 'Som da última trombeta'
+}
+
+var a = {
+    a: 'A',
+    b: 'B'
+}
+
+function exercicio4(objeto1) {
+    objeto2 = {
+        ...objeto1,
+        listaComidas: {
+
+        }
+    }
+
+    console.log(objeto2)
+}
+
+exercicio4(a)
