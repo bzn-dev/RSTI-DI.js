@@ -13,7 +13,9 @@ body {
 }
 
 img {
-    width: 50%;
+    gap: 100px;
+    padding-left: 10px;
+    width: 25%;
     /* ajuste a largura conforme necessário */
     height: auto;
     animation: rotate 10s linear infinite;
@@ -22,10 +24,10 @@ img {
 
 @keyframes rotate {
     from {
-        transform: rotate(0deg);
+        transform: rotate(-100deg);
     }
 
     to {
-        transform: rotate(140000deg);
+        transform: rotate(100deg);
     }
 }

@@ -200,7 +200,6 @@ console.log(somaDois(1, 2));*/
 
 console.log(receberArray([1, 2, 3, 4, 5, 6, 7])); */
 
-
 //*******************
 //  Array function  *
 //*******************
@@ -354,30 +353,195 @@ const copiaNomes = [...listaDeNomes]
 
 console.log(copiaNomes) */
 
-//################
-//  Exercício 4  #
-//################
+//###################################################################
+//  Último exercício sobre  objetos                                 #
+//      faz o spread de um objeto externo  para dentro da function  #
+//          imprime uma frase organizada com os itens dos objetos   #
+//###################################################################
 
-pessoa = {
+/* pessoa = {
     nome: 'Rafael',
     idade: 20,
-    generoMusical: 'Som da última trombeta'
+    sexo: 'M',
+    segue: 'Jesus',
+};
+
+function receberObjeto(objeto) {
+    puxar = {
+        ...objeto,
+    };
+
+    comida = {
+        comidasFav: [
+            'Escondidinho',
+            ' Strogonoff',
+            ' Lasanha',
+            ' Arroz com Molho',
+            ' Remi',
+            ' Massa c/ Batata e Molho',
+        ],
+    };
+
+    melhorAmiga = {
+        nomeMA: 'Êmily',
+        idadeMA: 16,
+    };
+
+    console.log(
+        `O nome da pessoa é: ${objeto.nome} e suas comidas favoritas são: ${comida.comidasFav}. Sua melhor amiga se chama ${melhorAmiga.nomeMA} e tem ${melhorAmiga.idadeMA} anos.`
+    );
 }
 
-var a = {
-    a: 'A',
-    b: 'B'
-}
+receberObjeto(pessoa); */
 
-function exercicio4(objeto1) {
-    objeto2 = {
-        ...objeto1,
-        listaComidas: {
+//################################
+//  Exerício 1  -  Condicionais  #
+//################################
 
-        }
+/* numberOne = 4;
+numberTwo = 3;
+
+if (numberOne === numberTwo) {
+    console.log(`Os números ${numberOne} e ${numberTwo} são iguais!`);
+} else {
+    console.log(`Os números ${numberOne} e ${numberTwo} são diferentes!`);
+} */
+
+/* function comparacao(num1 = prompt('Digite o número 1'), num2 = prompt('Digite o número 2')) {
+    if (num1 === num2) {
+        return `Os números ${num1} e ${num2} são iguais.`;
+    } else {
+        return `Os números ${num1} e ${num2} são diferentes.`;
     }
-
-    console.log(objeto2)
 }
 
-exercicio4(a)
+console.log(comparacao()); */
+
+//##################################
+//  Exerício 1.1  -  Condicionais  #
+//##################################
+
+/* function cnh(nome = prompt('Digite o seu nome'), idade = Number(prompt('Digite a sua idade'))) {
+    if (idade >= 18) {
+        return `Parabéns, ${nome}! Você pode dirigir`;
+    } else {
+        return `Foi mal, ${nome}, você ainda não pode dirigir!`;
+    }
+}
+
+console.log(cnh()); */
+
+//##################################
+//  Exerício 3  -  Condicionais    #
+//##################################
+
+function comparacao2(num1_1 = prompt('Digite o número 1'), num2_2 = prompt('Digite o número 2')) {
+    if (num1_1 > num2_2) {
+        console.log('Número 1 é maior que número 2');
+    } else if (num1_1 < num2_2) {
+        console.log('Número 1 é menor que número 2');
+    } else {
+        console.log('Os números são iguais!');
+    }
+}
+
+comparacao2();
+
+//############################################
+//  Exerício 4  -  Switch Case (Pokémons)    #
+//############################################
+
+/* var pokemons = Number(prompt('Bem vindo ao campo de batalha!\n\nEscolha o seu Pokémon:\n 1- Bulbassauro (Planta e veneno);\n2- Charmander (Fogo);\n3- Squirtle (Água)'));
+
+switch (pokemons) {
+    case 1:
+        console.log('Você escolheu o Bulbassauro!');
+        break;
+    case 2:
+        console.log('Você escolheu o Charmander!');
+        break;
+    case 3:
+        console.log('Você escolheu o Squirtle!');
+        break;
+    default:
+        console.log('Pokémon não identificado.');
+        break;
+} */
+
+//############################################
+//  Exerício 5 - Entrar ou não na faculdade  #
+//############################################
+
+/* function entradaFaculdade(
+    ensino = Number(prompt('Você concluiu o ensino médio? Digite 1 para sim e 2 para não')),
+    maioridade = Number(prompt('Você tem que idade?')),
+    cursando = Number(prompt('Você está cursando outra faculdade? Digite 1 para sim e 2 para não'))
+) {
+    if (ensino === 1 && maioridade >= 18 && cursando === 2) {
+        console.log('Você pode estudar em nossa faculdade!');
+    } else {
+        console.log('Você não pode estudar em nossa faculdade!');
+    }
+}
+
+entradaFaculdade(); */
+
+//###################################################
+//  Exercício Complementar 1 - Calculadora Simples  #
+//###################################################
+
+/* function calculator(num1_3 = prompt('Digite o número 1'), operador = prompt('Digite o operador'), num2_3 = prompt('Digite o número 2')) {
+    switch (operador) {
+        case '*':
+            console.log(num1_3 * num2_3);
+            break;
+        case '/':
+            console.log(num1_3 / num2_3);
+            break;
+        case '+':
+            console.log(num1_3 + num2_3);
+            break;
+        case '-':
+            console.log(num1_3 - num2_3);
+            break;
+        default:
+            console.log('Operador inválido');
+    }
+}
+
+calculator(); */
+
+//###########################################################################
+//  Exercício Complementar 2 - Média de notas  +  Explicação .split e .map  #
+//###########################################################################
+
+/* alert('Bem vindo à automação para médias escolares!');
+
+function catarNotas(catarnota = []) {
+    var aluno = prompt('Digite o nome do aluno');
+    var entradaNotas = prompt(`Digite as notas do aluno ${aluno} separadas pro vírgula`);
+    catarnota = entradaNotas.split(',').map(Number);
+    //alert(catarnota);
+
+    var somaNotas = 0;
+
+    for (var i = 0; i < catarnota.length; i++) {
+        somaNotas = catarnota[i] + somaNotas;
+    }
+    alert(somaNotas / catarnota.length);
+}
+catarNotas();
+
+function explainSplitOrMap(optionExplain) {
+    if (optionExplain === 1) {
+        console.log(
+            "split('separator'), serve para dividir strings em uma array de substrings (não necessário utilizar realmente um caractere no parâmetro separator, caso não use, a string inteira se tornará em um array de caracteres)"
+        );
+    } else if (optionExplain === 2) {
+        console.log(
+            "map(callback), é utilizado em arrays e cria um novo array aplicando uma função callback a cada elemento do array original, 'callback' será chamada para cada elemento do array e retorna o valor que será armazenado no novo array resultante\n\n Usos: currentValue(obrigatorio) | Opcionais => Number, parseFloat, index, array"
+        );
+    } else {
+        console.log('Opção inválida');
+    }
+} */
